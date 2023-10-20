@@ -1,0 +1,16 @@
+services:
+  cups:
+    container_name: cupsd
+    image: avatar2199/cups-autoprint
+    volumes:
+      - /var/run/dbus:/var/run/dbus
+      - /mnt/user/appdata/cups:/etc/cups/
+      - PDF SOURCE FOLDER:/home/print/to_print
+      - PDF DESTINATION FOLDER:/home/print/printed
+    ports:
+      - "631:631/tcp"
+    environment:
+      - WORK_START_HOUR=8
+      - WORK_STOP_HOUR=12 # So it will stop at 11:59. 12:00 and later is excluded
+      - WORK_START_DAY=1
+      - WORK_STOP_DAY=6 # So it will stop on Friday. Satuday and Sunday are excluded in this way.
