@@ -1,7 +1,8 @@
 This docker image is a [debian-based CUPS Print Server](https://hub.docker.com/r/olbat/cupsd) that includes a simple script to print PDF files automatically.
 
 Github: https://github.com/kodai2199/cups-autoprinter<br/>
-Docker: https://hub.docker.com/r/avatar2199/cups-autoprint/
+Docker: https://hub.docker.com/r/avatar2199/cups-autoprint/<br/>
+Let me know on Github if you have any issues or feature requests!
 
 # <div align="center">Documentation</div>
 ## <div align="center">Getting started</div>
